@@ -18,6 +18,7 @@ function studentGrades(studentMarks){
 
     studentMarks = 102;
     
+    // Making sure user input is within range
     if (isNaN(studentMarks) || studentMarks < 0 || studentMarks > 100) {
         console.log("Invalid input! Please enter a number between 0 and 100.");
     } else {
