@@ -16,7 +16,7 @@ const payeDeductions = function (basicSalary) {
     } else return 'Input Basic Salary'
 }
 
-//Function that calculates nhif deductions.
+/*Function that calculates nhif deductions.
 const nhifDeductions = function (basicSalary) {
     if (basicSalary >= 100000) {
         return 1700;
@@ -53,4 +53,20 @@ const nhifDeductions = function (basicSalary) {
     } else if (basicSalary <= 5999) {
         return 150;
     } else return 'Input Salary!'
+} */
+
+//Function to calculate SHIF
+const shifDeductions = basicSalary * 0.0275;
+
+
+//Function to calculate NSSF
+const nssfDeductionsTier1 = function (basicSalary){
+   if (basicSalary <= 7000) {
+    return basicSalary * 0.06;
+   } 
+}
+const nssfDeductionsTier2 = function (basicSalary) {
+    if (basicSalary>= 7001 && basicSalary <= 36000) {
+        return basicSalary * 0.06;
+    }
 }
