@@ -39,7 +39,7 @@ const nssfDeductionsTier2 = function (basicSalary) {
 };
 
 //test case for salary of 100000
-basicSalary = 100000
+basicSalary = 500000
 
 const totalDeductions = payeDeductions(basicSalary) + nssfDeductionsTier2(basicSalary) + shifDeductions(basicSalary);
 
